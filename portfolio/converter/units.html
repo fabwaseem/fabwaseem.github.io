@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="fevicon.ico" type="image/ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>ProConverter</title>
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <div class="navbar">
+          <a href="index.html" class="logo">ProConverter</a>
+          <ul>
+            <li><a href="Age.html">Age</a></li>
+            <li><a href="index.html" >Currency</a></li>
+            <li><a href="index.html">ProConverter</a></li>
+            <li><a href="Calculator.html">Calculator</a></li>
+            <li><a href="Units.html" class="active">Units</a></li>
+          </ul>
+          <i class="fa fa-bars ham-btn" id="ham-btn" aria-hidden="true"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container units">
+      <div class="wrapper ">
+        <h1 class="heading">Units Converter</h1>
+        <div class="input ">
+          <label for="amount">Amount</label>
+          <input type="text" id="amount" name="amount" />
+          <p id="inam" class="inam">&#10060;</p>
+          <div class="unit con">
+            <label for="unit ">Unit</label>
+            <select name="unit" id="unit">
+              <option value="length">Length</option>
+              <option value="temperature">Temperature</option>
+              <option value="area">Area</option>
+              <option value="volume">Volume</option>
+              <option value="weight">Weight</option>
+              <option value="time">Time</option>
+            </select>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="from con">
+            <label for="from ">From</label>
+            <select name="from" id="from">
+              <option value="kilometer">Kilometer</option>
+              <option value="meter">Meter</option>
+              <option value="centimeter">Centimeter</option>
+              <option value="milimeter">Milimeter</option>
+              <option value="nanometer">Nanometer</option>
+              <option value="mile">Mile</option>
+              <option value="yard">Yard</option>
+              <option value="foot">Foot</option>
+              <option value="inch">Inch</option>
+            </select>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="to con">
+            <label for="to">To</label>
+            <select name="to" id="to">
+              <option value="kilometer">Kilometer</option>
+              <option value="meter">Meter</option>
+              <option value="centimeter">Centimeter</option>
+              <option value="milimeter">Milimeter</option>
+              <option value="nanometer">Nanometer</option>
+              <option value="mile">Mile</option>
+              <option value="yard">Yard</option>
+              <option value="foot">Foot</option>
+              <option value="inch">Inch</option>
+            </select>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="button">
+            <button class="btn" id="convert">Convert</button>
+          </div>
+        </div>
+        <div class="output show">
+          <p>Amount In <span id="from-unit"></span></p>
+
+          <h1 id="input-amount"></h1>
+
+          <p>Amount In <span id="to-unit"></span></p>
+
+          <h1 id="result"></h1>
+          <div class="button">
+            <button class="btn back-btn">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="units.js"></script>
+  </body>
+</html>

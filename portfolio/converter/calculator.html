@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="fevicon.ico" type="image/ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>ProConverter</title>
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <div class="navbar">
+          <a href="index.html" class="logo">ProConverter</a>
+          <ul>
+            <li><a href="Age.html">Age</a></li>
+            <li><a href="index.html">Currency</a></li>
+            <li><a href="index.html">ProConverter</a></li>
+            <li><a href="Calculator.html" class="active">Calculator</a></li>
+            <li><a href="Units.html">Units</a></li>
+          </ul>
+          <i class="fa fa-bars ham-btn" id="ham-btn" aria-hidden="true"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="wrapper">
+        <h1 class="heading">Calculator</h1>
+        <div class="calculator">
+          <input type="text" value="0" id="calc-display" maxlength="5" readonly />
+          <div class="line-1">
+            <button class="btn" value="pow">x&sup2;</button>
+            <button class="btn">CE</button>
+            <button class="btn">C</button>
+            <button class="btn last" value="remove">&#9003;</button>
+          </div>
+          <div class="line-2">
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn last">*</button>
+          </div>
+          <div class="line-3">
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn last">-</button>
+          </div>
+          <div class="line-4">
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn last">+</button>
+          </div>
+          <div class="line-5">
+            <button class="btn">0</button>
+            <button class="btn">.</button>
+            <button class="btn">/</button>
+            <button class="btn last">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="calc.js"></script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="fevicon.ico" type="image/ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ProConverter</title>
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <div class="navbar">
+          <a href="index.html" class="logo">ProConverter</a>
+          <ul>
+            <li><a href="Age.html" class="active">Age</a></li>
+            <li><a href="index.html" >Currency</a></li>
+            <li><a href="index.html">ProConverter</a></li>
+            <li><a href="Calculator.html">Calculator</a></li>
+            <li><a href="Units.html">Units</a></li>
+          </ul>
+          <i class="fa fa-bars ham-btn" id="ham-btn" aria-hidden="true"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="wrapper">
+        <h1 class="heading">Age Calculator</h1>
+        <div class="input age">
+          <label for="bday">Your Birthday</label>
+          <input type="date" id="bday" name="bday" />
+          <p id="inam" class="inam">&#10060;</p>
+          <label for="tday">Age at the Date of</label>
+          <input type="date" id="tday" name="tday" />
+          <p id="inam2" class="inam">&#10060;</p>
+          <div class="button">
+            <button class="btn" id="convert">Calculate</button>
+        </div>
+        </div>
+        <div class="output age show">
+           
+            <span>Days</span>
+            <h1 id="age-in-days">d</h1>
+            
+            <span>Hours</span>
+            <h1 id="age-in-hours">d</h1>
+
+            <span>Minutes</span>
+            <h1 id="age-in-minutes">d</h1>
+
+            <span>Seconds</span>
+            <h1 id="age-in-seconds">dd</h1>
+
+            <div class="button">
+                <button class="btn back-btn" >Back</button>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="age.js"></script>
+</body>
+</html>
