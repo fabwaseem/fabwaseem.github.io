@@ -1,5 +1,5 @@
 // LED Matrix
-import { LedMatrix } from "https://www.unpkg.com/@fabwaseem/easy-led-matrix@1.2.0/easy-led-matrix.min.js";
+import { LedMatrix } from "https://www.unpkg.com/@fabwaseem/easy-led-matrix@1.3.0/easy-led-matrix.min.js";
 import { Pane } from "https://cdn.jsdelivr.net/npm/tweakpane@4.0.3/dist/tweakpane.min.js";
 
 let config = {
